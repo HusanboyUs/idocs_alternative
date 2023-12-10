@@ -30,7 +30,7 @@ activate on Mac terminal
 venv/bin/activate
 
 ```
-4. IMPORTANT: create modal database:
+4. IMPORTANT: Just in case u encounter problems with saving times please create modal database:
 on the same branch with modal.py open terminal and
 ```
 python3
