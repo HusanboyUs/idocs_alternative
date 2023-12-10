@@ -1,4 +1,4 @@
-# Open-source time tracking app
+# Open-source time tracking app (Timlog)
 
 Please be aware that application building process has not finished yet
 
