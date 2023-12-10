@@ -4,6 +4,7 @@ from datetime import datetime
 
 class TimeGenerate:
 
+
     @staticmethod
     def main():
         conn = sqlite3.connect('timedb.sqlite3')
@@ -21,7 +22,7 @@ class TimeGenerate:
             <title>Total Times</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         </head>
-        <body>
+        <body data-bs-theme="dark">
 
             <div class="col-md-6 offset-md-3 mt-5">
                 <h1>Total Times</h1>

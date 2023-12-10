@@ -17,6 +17,8 @@ class TimerApp(CTk):
 
         set_default_color_theme('dark-blue')
         self.user = 'root'
+        self.modal = Modal()
+        self.modal.create_table()
 
         self.timer_label = CTkLabel(self, text='00:00:00', width=100, height=100, font=('Arial', 50))
         self.timer_label.pack(padx=0, pady=0)
@@ -62,9 +64,8 @@ class TimerApp(CTk):
 
     def save_time_handler(self):
         try:
-            modal = Modal()
-            modal.insert_time((self.user, self.time_string, date.today()))
-            print(modal._logs)
+            self.modal.insert_time((self.user, self.time_string, date.today()))
+            print(self.modal._logs)
         except AttributeError:
             Error.main('Database not found or error while operation!')
 

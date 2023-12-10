@@ -44,7 +44,6 @@ class Modal:
     def edit_time(self):
         pass
 
-modal =Modal()
 
 
 
